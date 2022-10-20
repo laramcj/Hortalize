@@ -1,0 +1,42 @@
+<div class="body">
+
+
+  <!-- //chamar nome da horta criada -->
+  <h2 tabindex="0" class="aprovado">Olá Lara!</h2>
+  <button mat-flat-button color="primary" class="btn" routerLink="/minha-horta">
+    Minha Horta</button>
+  <button mat-flat-button color="primary" class="btn" routerLink="/conection">
+    Conexões</button>
+  <button mat-flat-button color="primary" class="btn" routerLink="/ranking">
+    Rankings</button>
+  <button mat-stroked-button class="btn-sem" routerLink="/download">
+    Publicações</button>
+
+  <div class="container">
+    <div tabindex="0" class="card">
+      <mat-form-field appearance="fill">
+        <mat-label>Tipo de publicação</mat-label>
+        <mat-select>
+          <mat-option value="one">Regar - 100</mat-option>
+          <mat-option value="two">Fertilizar - 200</mat-option>
+          <mat-option value="three">Plantar - 500</mat-option>
+          <mat-option value="four">Colher - 50</mat-option>
+          <mat-option value="five">Podar - 100</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="custom-file-upload">
+        <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+    </div>
+    
+
+    </div>
+
+
+
+    <mat-divider></mat-divider>
+
+    <button mat-flat-button color="primary" class="btn" routerLink="#">
+      Adicionar novo download +
+    </button>
+  </div>
+</div>
